@@ -1,0 +1,13 @@
+{
+  "name": "typst-tech-report",
+  "description": "Assemble an arxiv-style technical PDF report about a project (architecture, stack, what's built) using Typst. Generic template, no branding — suitable for any codebase.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Daniel Zholkovsky",
+    "url": "https://github.com/dailydaniel"
+  },
+  "homepage": "https://github.com/dailydaniel/typst-tech-report",
+  "repository": "https://github.com/dailydaniel/typst-tech-report",
+  "license": "MIT",
+  "keywords": ["typst", "report", "documentation", "pdf"]
+}

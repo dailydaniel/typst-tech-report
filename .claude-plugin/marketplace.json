@@ -1,0 +1,15 @@
+{
+  "name": "typst-tech-report",
+  "owner": {
+    "name": "dailydaniel",
+    "url": "https://github.com/dailydaniel"
+  },
+  "description": "Single-plugin marketplace for typst-tech-report — a Claude Code skill that produces arxiv-style technical PDF reports about a project using Typst.",
+  "plugins": [
+    {
+      "name": "typst-tech-report",
+      "source": "./",
+      "description": "Assemble an arxiv-style technical PDF report about the current project using Typst."
+    }
+  ]
+}
