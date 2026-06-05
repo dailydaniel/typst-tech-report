@@ -28,6 +28,8 @@
   date: none,           // string or datetime; rendered as-is if string
 
   // Front matter
+  logo: none,           // path to a logo image (e.g. "logo.png"); rendered above the title
+  logo-height: 2.8cm,   // height of the logo on the title page
   abstract: none,       // content block; if set, rendered on the title page
   show-outline: true,   // table of contents after the title page
   outline-depth: 3,
@@ -134,7 +136,15 @@
   // Title page
   // ===========================================================================
 
-  v(3cm)
+  if logo != none {
+    v(2cm)
+    align(center)[
+      #image(logo, height: logo-height)
+    ]
+    v(0.8cm)
+  } else {
+    v(3cm)
+  }
   align(center)[
     #text(size: 22pt, weight: "bold")[#title]
     #if subtitle != none {

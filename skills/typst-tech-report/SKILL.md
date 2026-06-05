@@ -231,6 +231,8 @@ The template is at `templates/tech_report.typ`. It exposes one function: `tech-r
 | `subtitle` | `none` | Subtitle under the title on page 1 |
 | `authors` | `()` | List of `(name, affiliation, email)` dicts; affiliation/email optional |
 | `date` | `none` | Date string, e.g. `"June 2026"` |
+| `logo` | `none` | Path to a logo image (e.g. `"logo.png"`) rendered above the title. Place the file in the same directory as `report.typ`. |
+| `logo-height` | `2.8cm` | Height of the logo on the title page |
 | `abstract` | `none` | Content block; rendered centered on title page |
 | `show-outline` | `true` | Table of contents on page 2 |
 | `outline-depth` | `3` | How deep the ToC goes |
