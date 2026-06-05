@@ -1,7 +1,7 @@
 {
   "name": "typst-tech-report",
   "description": "Assemble an arxiv-style technical PDF report about a project (architecture, stack, what's built) using Typst. Generic template, no branding — suitable for any codebase.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Daniel Zholkovsky",
     "url": "https://github.com/dailydaniel"

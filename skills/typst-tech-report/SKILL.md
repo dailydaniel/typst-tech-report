@@ -1155,6 +1155,7 @@ Since 0.13, all of the above also accept `bytes` instead of a path.
 
 ## 8.31 Common gotchas
 
+- **`@name` in content mode is a label reference, not a literal.** Writing `@ag-ui/client` or `@preview/cetz` inside a content block (`[...]`) makes Typst look for a label named `<ag-ui>` / `<preview>` and error out with `label does not exist`. This trips up package names, npm scopes, email-like tokens, anything starting with `@`. Fix by wrapping in raw/backticks: `` `@ag-ui/client` `` or `#raw("@ag-ui/client")`. Escaping (`\@`) also works but is less readable. Note: inside string literals (`"@preview/cetz:0.3.4"` in `#import`) the `@` is fine because that's code mode, not content mode.
 - **Markup vs code mode** — `#strong[hi]` (code calling function with content) ≠ `*hi*` (markup). Inside `{ ... }` you're in code mode; use `[...]` to drop back into content.
 - **Trailing comma in function calls** — Typst tolerates and often requires trailing commas in arrays and function args. `(1, 2, 3,)` is fine.
 - **`set` vs `show`** — `set` changes default args; `show` transforms or replaces elements. `show heading: set text(size: 16pt)` is a common combo: "for every heading, set the text size".
